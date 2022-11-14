@@ -20,7 +20,7 @@ const GetStarted = () => {
             </div>
             <Button
               variant="contained"
-              onClick={() => navigate("/allbooks")}
+              onClick={() => navigate("/login")}
               sx={{
                 backgroundColor: "#8FBF75 ",
                 maxWidth: "50%",

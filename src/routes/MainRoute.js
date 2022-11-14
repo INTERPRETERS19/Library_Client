@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "../views/LogIn/Login";
 import GetStarted from "../views/GetStarted/GetStarted";
 import AllBooks from "../views/AllBooks/AllBooks";
 import AllOrders from "../views/AllOrders/Allorders";
@@ -9,6 +10,7 @@ const MainRoute = () => {
     <Router>
       <Routes>
         <Route path="/" element={<GetStarted />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/neworders" element={<NewOrders />} />
         <Route path="/allorders" element={<AllOrders />} />
         <Route path="/allbooks" element={<AllBooks />} />
