@@ -3,7 +3,7 @@ import TextField from "@mui/material/TextField";
 import Nav from "../../components/nav";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
-import Getstarted from "../../assets/5.jpg";
+// import Getstarted from "../../assets/5.jpg";
 import "./AddBooks.css";
 
 const AddBooks = () => {
@@ -22,11 +22,11 @@ const AddBooks = () => {
               variant="outlined"
             />
             <br />
-            <TextField id="outlined-basic" label="Price" variant="outlined" />
+            <TextField id="outlined-basic" label="Author name" variant="outlined" />
             <br />
             <TextField
               id="outlined-basic"
-              label="Quantity"
+              label="ISBN number"
               variant="outlined"
             />
 
@@ -54,9 +54,9 @@ const AddBooks = () => {
         </div>
         <div className="r">
           <div className="get">
-            <div>
+            {/* <div>
               <img src={Getstarted} alt="logo" height={700} width={700} />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

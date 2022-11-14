@@ -41,12 +41,23 @@ function Neworders() {
             <li className="nav-item">
               <NavLink
                 exact
+                to="/allborrowings"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                All borrowings
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
                 to="/addmembers"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
-                New Members
+                Add Members
               </NavLink>
             </li>
             <li className="nav-item">
@@ -57,7 +68,29 @@ function Neworders() {
                 className="nav-links"
                 onClick={handleClick}
               >
-                New Books
+                Add Books
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/addborrowings"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Add borrowings
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Logout
               </NavLink>
             </li>
           </ul>

@@ -22,7 +22,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import FilterListIcon from "@mui/icons-material/FilterList";
 import { visuallyHidden } from "@mui/utils";
 //import { NavLink } from "react-router-dom";
-import "./AllOrders.css";
+import "./AllMembers.css";
 import Nav from "../../components/nav";
 
 function createData(name, calories, fat, carbs, protein) {
@@ -234,7 +234,7 @@ EnhancedTableToolbar.propTypes = {
   numSelected: PropTypes.number.isRequired,
 };
 
-export default function AllBooks() {
+export default function AllMembers() {
   const [order, setOrder] = React.useState("asc");
   const [orderBy, setOrderBy] = React.useState("calories");
   const [selected, setSelected] = React.useState([]);
