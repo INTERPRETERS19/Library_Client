@@ -4,15 +4,15 @@ import Nav from "../../components/nav";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
 import Getstarted from "../../assets/5.jpg";
-import "./NewBooks.css";
+import "./AddBooks.css";
 
-const NewBooks = () => {
+const AddBooks = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="NewBooksOut">
+    <div className="AddBooksOut">
       <Nav />
-      <div className="NewBooks">
+      <div className="AddBooks">
         <div className="l">
           <div className="firstline">
             <p>Adding new book</p>
@@ -32,7 +32,7 @@ const NewBooks = () => {
 
             <Button
               variant="contained"
-              onClick={() => navigate("/newbooks")}
+              onClick={() => navigate("/AddBooks")}
               sx={{
                 backgroundColor: "#8FBF75 ",
                 maxWidth: "50%",
@@ -63,4 +63,4 @@ const NewBooks = () => {
     </div>
   );
 };
-export default NewBooks;
+export default AddBooks;

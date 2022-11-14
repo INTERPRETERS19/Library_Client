@@ -30,29 +30,29 @@ function Neworders() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/allorders"
+                to="/allmembers"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
-                All Orders
+                All Members
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
                 exact
-                to="/neworders"
+                to="/addmembers"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
-                New Orders
+                New Members
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
                 exact
-                to="/newbooks"
+                to="/addbooks"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
