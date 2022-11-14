@@ -4,7 +4,7 @@ import Nav from "../../components/nav";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
 import Getstarted from "../../assets/4.jpg";
-import "./NewOrders.css";
+import "./AddMembers";
 
 const NewOrders = () => {
   const navigate = useNavigate();
@@ -15,7 +15,7 @@ const NewOrders = () => {
       <div className="NewOrders">
         <div className="l">
           <div className="firstline">
-            <p>Create an Order</p>
+            <p>Add a Member</p>
             <TextField
               id="outlined-basic"
               label="Book name"
@@ -44,7 +44,7 @@ const NewOrders = () => {
                 marginTop: "5%",
               }}
             >
-              Order
+              Member
             </Button>
 
             <div className="para">

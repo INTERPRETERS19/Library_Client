@@ -11,11 +11,10 @@ const GetStarted = () => {
       <div className="GetStarted">
         <div className="l">
           <div className="firstline">
-            “Bookshops are places of endless entertainment and renewal – what’s
-            not to love?”
+            “The only thing that you absolutely have to know, is the location of the library.”
             <div className="para">
               <div className="first">
-                <p>Get into the application for further details</p>
+                <p>Get into library</p>
               </div>
             </div>
             <Button

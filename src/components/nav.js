@@ -30,34 +30,67 @@ function Neworders() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/allorders"
+                to="/allmembers"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
-                All Orders
+                All Members
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
                 exact
-                to="/neworders"
+                to="/allborrowings"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
-                New Orders
+                All borrowings
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
                 exact
-                to="/newbooks"
+                to="/addmembers"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
-                New Books
+                Add Members
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/addbooks"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Add Books
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/addborrowings"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Add borrowings
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Logout
               </NavLink>
             </li>
           </ul>

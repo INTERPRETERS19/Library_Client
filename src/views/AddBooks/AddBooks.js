@@ -3,16 +3,16 @@ import TextField from "@mui/material/TextField";
 import Nav from "../../components/nav";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
-import Getstarted from "../../assets/5.jpg";
-import "./NewBooks.css";
+// import Getstarted from "../../assets/5.jpg";
+import "./AddBooks.css";
 
-const NewBooks = () => {
+const AddBooks = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="NewBooksOut">
+    <div className="AddBooksOut">
       <Nav />
-      <div className="NewBooks">
+      <div className="AddBooks">
         <div className="l">
           <div className="firstline">
             <p>Adding new book</p>
@@ -22,17 +22,17 @@ const NewBooks = () => {
               variant="outlined"
             />
             <br />
-            <TextField id="outlined-basic" label="Price" variant="outlined" />
+            <TextField id="outlined-basic" label="Author name" variant="outlined" />
             <br />
             <TextField
               id="outlined-basic"
-              label="Quantity"
+              label="ISBN number"
               variant="outlined"
             />
 
             <Button
               variant="contained"
-              onClick={() => navigate("/newbooks")}
+              onClick={() => navigate("/AddBooks")}
               sx={{
                 backgroundColor: "#8FBF75 ",
                 maxWidth: "50%",
@@ -54,13 +54,13 @@ const NewBooks = () => {
         </div>
         <div className="r">
           <div className="get">
-            <div>
+            {/* <div>
               <img src={Getstarted} alt="logo" height={700} width={700} />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
     </div>
   );
 };
-export default NewBooks;
+export default AddBooks;
