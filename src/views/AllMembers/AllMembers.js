@@ -25,13 +25,11 @@ import { visuallyHidden } from "@mui/utils";
 import "./AllMembers.css";
 import Nav from "../../components/nav";
 
-function createData(name, calories, fat, carbs, protein) {
+function createData(ID, Member_Name, Faculty) {
   return {
-    name,
-    calories,
-    fat,
-    carbs,
-    protein,
+    ID,
+    Member_Name,
+    Faculty,
   };
 }
 
@@ -83,34 +81,22 @@ function stableSort(array, comparator) {
 
 const headCells = [
   {
-    id: "name",
+    id: "ID",
     numeric: false,
     disablePadding: true,
-    label: "Dessert (100g serving)",
+    label: "ID",
   },
   {
-    id: "calories",
+    id: "Member_Name",
     numeric: true,
     disablePadding: false,
-    label: "Calories",
+    label: "Member_Name",
   },
   {
-    id: "fat",
+    id: "Faculty",
     numeric: true,
     disablePadding: false,
-    label: "Fat (g)",
-  },
-  {
-    id: "carbs",
-    numeric: true,
-    disablePadding: false,
-    label: "Carbs (g)",
-  },
-  {
-    id: "protein",
-    numeric: true,
-    disablePadding: false,
-    label: "Protein (g)",
+    label: "Faculty",
   },
 ];
 
@@ -209,7 +195,7 @@ function EnhancedTableToolbar(props) {
           id="tableTitle"
           component="div"
         >
-          Nutrition
+          Book Details
         </Typography>
       )}
 
@@ -234,9 +220,9 @@ EnhancedTableToolbar.propTypes = {
   numSelected: PropTypes.number.isRequired,
 };
 
-export default function AllMembers() {
+export default function AllBooks() {
   const [order, setOrder] = React.useState("asc");
-  const [orderBy, setOrderBy] = React.useState("calories");
+  const [orderBy, setOrderBy] = React.useState("ok");
   const [selected, setSelected] = React.useState([]);
   const [page, setPage] = React.useState(0);
   const [dense, setDense] = React.useState(false);
@@ -253,19 +239,19 @@ export default function AllMembers() {
 
   const handleSelectAllClick = (event) => {
     if (event.target.checked) {
-      const newSelected = rows.map((n) => n.name);
+      const newSelected = rows.map((n) => n.ID);
       setSelected(newSelected);
       return;
     }
     setSelected([]);
   };
 
-  const handleClick = (event, name) => {
-    const selectedIndex = selected.indexOf(name);
+  const handleClick = (event, ID) => {
+    const selectedIndex = selected.indexOf(ID);
     let newSelected = [];
 
     if (selectedIndex === -1) {
-      newSelected = newSelected.concat(selected, name);
+      newSelected = newSelected.concat(selected, ID);
     } else if (selectedIndex === 0) {
       newSelected = newSelected.concat(selected.slice(1));
     } else if (selectedIndex === selected.length - 1) {
@@ -293,7 +279,7 @@ export default function AllMembers() {
     setDense(event.target.checked);
   };
 
-  const isSelected = (name) => selected.indexOf(name) !== -1;
+  const isSelected = (ID) => selected.indexOf(ID) !== -1;
 
   // Avoid a layout jump when reaching the last page with empty rows.
   const emptyRows =
@@ -348,17 +334,17 @@ export default function AllMembers() {
                   {stableSort(rows, getComparator(order, orderBy))
                     .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                     .map((row, index) => {
-                      const isItemSelected = isSelected(row.name);
+                      const isItemSelected = isSelected(row.ID);
                       const labelId = `enhanced-table-checkbox-${index}`;
 
                       return (
                         <TableRow
                           hover
-                          onClick={(event) => handleClick(event, row.name)}
+                          onClick={(event) => handleClick(event, row.ID)}
                           role="checkbox"
                           aria-checked={isItemSelected}
                           tabIndex={-1}
-                          key={row.name}
+                          key={row.ID}
                           selected={isItemSelected}
                         >
                           <TableCell padding="checkbox">
@@ -376,12 +362,10 @@ export default function AllMembers() {
                             scope="row"
                             padding="none"
                           >
-                            {row.name}
+                            {row.ID}
                           </TableCell>
-                          <TableCell align="right">{row.calories}</TableCell>
-                          <TableCell align="right">{row.fat}</TableCell>
-                          <TableCell align="right">{row.carbs}</TableCell>
-                          <TableCell align="right">{row.protein}</TableCell>
+                          <TableCell align="right">{row.Member_Name}</TableCell>
+                          <TableCell align="right">{row.Faculty}</TableCell>
                         </TableRow>
                       );
                     })}

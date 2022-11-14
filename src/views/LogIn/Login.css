@@ -43,8 +43,9 @@
   /* background: #aa0000; */
 }
 .r img {
-  height: 100vh;
-  width: 100%;
+  height: 80vh;
+  width: 70vw;
+  margin-top: 50px;
   background-repeat: no-repeat, no-repeat;
   background-position: right, left;
 }
@@ -108,6 +109,7 @@ form {
   align-items: center;
   padding: 20px;
   padding-bottom: 20px;
+  padding-right: 10px;
   
   
 }
