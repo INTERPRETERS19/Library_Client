@@ -4,37 +4,35 @@ import Nav from "../../components/nav";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
 import Getstarted from "../../assets/4.jpg";
-import "./AddMembers";
+import "./AddMembers.css";
 
-const NewOrders = () => {
+const AddMembers = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="NewOrdersOut">
+    <div className="AddMembersOut">
       <Nav />
-      <div className="NewOrders">
+      <div className="AddMembers">
         <div className="l">
           <div className="firstline">
             <p>Add a Member</p>
             <TextField
               id="outlined-basic"
-              label="Book name"
+              label="Member name"
               variant="outlined"
             />
             <br />
-            <TextField id="outlined-basic" label="Price" variant="outlined" />
-            <br />
             <TextField
               id="outlined-basic"
-              label="Quantity"
+              label="Faculty Name"
               variant="outlined"
             />
 
             <Button
               variant="contained"
-              onClick={() => navigate("/neworders")}
+              onClick={() => navigate("/AddMembers")}
               sx={{
-                backgroundColor: "#8FBF75 ",
+                backgroundColor: "#00008b ",
                 maxWidth: "50%",
                 alignItems: "center",
                 textAlign: "center",
@@ -44,7 +42,7 @@ const NewOrders = () => {
                 marginTop: "5%",
               }}
             >
-              Member
+              ADD
             </Button>
 
             <div className="para">
@@ -54,13 +52,13 @@ const NewOrders = () => {
         </div>
         <div className="r">
           <div className="get">
-            <div>
+            {/* <div>
               <img src={Getstarted} alt="logo" height={700} width={700} />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
     </div>
   );
 };
-export default NewOrders;
+export default AddMembers;

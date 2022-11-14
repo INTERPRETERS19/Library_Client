@@ -1,0 +1,77 @@
+.AddBorrowingsOut {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    width: 100vw;
+  }
+  
+  .AddBorrowings {
+    display: flex;
+    flex-direction: row;
+  }
+  .AddBorrowings p {
+    text-align: center;
+  }
+  .AddBorrowings .r {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    align-items: center;
+    background-color: #e0e7ee;
+    justify-content: center;
+    align-self: center;
+  }
+  .AddBorrowings .r {
+    flex-grow: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .AddBorrowings .firstline {
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    justify-content: center;
+    width: 450px;
+    height: 100vh;
+    padding: 20px;
+    color: rgb(6, 14, 48);
+    text-align: center;
+    align-self: center;
+    align-content: center;
+  }
+  .AddBorrowings .firstline Button {
+    justify-content: center;
+    align-self: center;
+    width: 500px;
+  }
+  .AddBorrowings .first p {
+    line-height: 40px;
+  }
+  .AddBorrowings .para p {
+    font-size: 21px;
+    width: 500px;
+    font-weight: 400;
+    margin-top: 2%;
+    line-height: 30px;
+    text-align: left;
+    color: #808080;
+  }
+  .AddBorrowings .get {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .AddBorrowings .get img {
+    text-align: center;
+    align-content: center;
+    height: 90vh;
+    width: 50vw;
+  }
+  

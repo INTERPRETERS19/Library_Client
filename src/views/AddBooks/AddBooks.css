@@ -1,4 +1,4 @@
-.NewBooksOut {
+.AddBooksOut {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -6,24 +6,24 @@
   width: 100vw;
 }
 
-.NewBooks {
+.AddBooks {
   display: flex;
   flex-direction: row;
 }
-.NewBooks p {
+.AddBooks p {
   text-align: center;
 }
-.NewBooks .l {
+.AddBooks .r {
   display: flex;
   flex-direction: column;
   width: 50%;
   height: 100vh;
   align-items: center;
-  background-color: #b2c4a7;
+  background-color: #e0e7ee;
   justify-content: center;
   align-self: center;
 }
-.NewBooks .r {
+.AddBooks .r {
   flex-grow: 1;
   height: 100vh;
   display: flex;
@@ -31,7 +31,7 @@
   justify-content: center;
 }
 
-.NewBooks .firstline {
+.AddBooks .firstline {
   font-size: 28px;
   display: flex;
   flex-direction: column;
@@ -45,15 +45,15 @@
   align-self: center;
   align-content: center;
 }
-.NewBooks .firstline Button {
+.AddBooks .firstline Button {
   justify-content: center;
   align-self: center;
   width: 500px;
 }
-.NewBooks .first p {
+.AddBooks .first p {
   line-height: 40px;
 }
-.NewBooks .para p {
+.AddBooks .para p {
   font-size: 21px;
   width: 500px;
   font-weight: 400;
@@ -62,13 +62,13 @@
   text-align: left;
   color: #808080;
 }
-.NewBooks .get {
+.AddBooks .get {
   height: 100vh;
   display: flex;
   flex-direction: row;
 }
 
-.NewBooks .get img {
+.AddBooks .get img {
   text-align: center;
   align-content: center;
   height: 100vh;
