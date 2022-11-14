@@ -34,7 +34,7 @@ const AddBooks = () => {
               variant="contained"
               onClick={() => navigate("/AddBooks")}
               sx={{
-                backgroundColor: "#8FBF75 ",
+                backgroundColor: "#00008b",
                 maxWidth: "50%",
                 alignItems: "center",
                 textAlign: "center",
@@ -44,7 +44,7 @@ const AddBooks = () => {
                 marginTop: "5%",
               }}
             >
-              Create
+              ADD
             </Button>
 
             <div className="para">

@@ -1,4 +1,4 @@
-.NewOrdersOut {
+.AddMembersOut {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -6,24 +6,24 @@
   width: 100vw;
 }
 
-.NewOrders {
+.AddMembers {
   display: flex;
   flex-direction: row;
 }
-.NewOrders p {
+.AddMembers p {
   text-align: center;
 }
-.NewOrders .l {
+.AddMembers .r {
   display: flex;
   flex-direction: column;
   width: 50%;
   height: 100vh;
   align-items: center;
-  background-color: #bbb7d8;
+  background-color: #e0e7ee;
   justify-content: center;
   align-self: center;
 }
-.NewOrders .r {
+.AddMembers .r {
   flex-grow: 1;
   height: 100vh;
   display: flex;
@@ -31,7 +31,7 @@
   justify-content: center;
 }
 
-.NewOrders .firstline {
+.AddMembers .firstline {
   font-size: 28px;
   display: flex;
   flex-direction: column;
@@ -45,15 +45,15 @@
   align-self: center;
   align-content: center;
 }
-.NewOrders .firstline Button {
+.AddMembers .firstline Button {
   justify-content: center;
   align-self: center;
   width: 500px;
 }
-.NewOrders .first p {
+.AddMembers .first p {
   line-height: 40px;
 }
-.NewOrders .para p {
+.AddMembers .para p {
   font-size: 21px;
   width: 500px;
   font-weight: 400;
@@ -62,13 +62,13 @@
   text-align: left;
   color: #808080;
 }
-.NewOrders .get {
+.AddMembers .get {
   height: 100vh;
   display: flex;
   flex-direction: row;
 }
 
-.NewOrders .get img {
+.AddMembers .get img {
   text-align: center;
   align-content: center;
   height: 90vh;

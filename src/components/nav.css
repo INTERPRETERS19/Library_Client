@@ -64,7 +64,7 @@
 
 .nav-item:hover:after {
   width: 100%;
-  background: #8fbf75;
+  background: #3d4f9e;
 }
 
 .nav-item .active {
@@ -97,7 +97,7 @@
     z-index: 1;
   }
   .nav-item .active {
-    color: #ffdd40;
+    color: #0b2942;
     border: none;
   }
   .nav-links {
@@ -114,6 +114,6 @@
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #ffdd40;
+    color: #080747;
   }
 }
